@@ -169,6 +169,9 @@ Describe why you chose this chart and what information it reveals
 
 library(ggplot2)
 
+Describe why you chose this chart and what information it reveals
+
+I chose this bar chart because it shows how the percentage of depression is moving in each year from 1990 to 2017. Since there were too many countries at first, I isolated it down to 10 large countries. This visual shows how the United States and Australia have higher overall depression percentage rates than the 8 other countries. Overall, from 1990-2017, the data actually shows very minimal change in the percentage of people with depression, indicating that the rates of depression aren't actually changing so significantly or much at all throughout the years.
 ``````{r, echo = FALSE, code = readLines("chart3.R")}
 bar_chart
 
