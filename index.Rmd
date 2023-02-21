@@ -159,6 +159,9 @@ Describe why you chose this chart and what information it reveals
 
 ### Chart 3
 
-Include a chart
+library(ggplot2)
 
-Describe why you chose this chart and what information it reveals
+``````{r, echo = FALSE, code = readLines("chart3.R")}
+bar_chart
+```
+
