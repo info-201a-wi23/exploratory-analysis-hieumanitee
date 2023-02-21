@@ -3,62 +3,142 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+# Beyond the Screen: Technology's Impact on Mental Illness
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+### Hieu Nguyen (hieun3@uw.edu), Kiana Gregorich (kiaxgreg@uw.edu), Oscar Shen (cshen5@uw.edu), Lissette Pasion (lpasio@uw.edu)
 
-### Authors
+### Winter 2023
 
-Names of your team members
-
-### Date
-
-Winter 2022
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is "How has the rise of technology impacted mental health?". Understanding the relationship between technology and mental health is crucial in today's digital age as it can provide insights into how to promote positive mental wellness and prevent possible negative consequences. To address this question we're going to look at the rates of mental illness in recent years where significant technological innovations such as the internet and phone were created, and compare them to past periods of time to look for any trends in the rates of mental illness.
+
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Mental Illness; Technology; Inter-connectivity; Human Psychology.
+
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+> Briefly introduce your project. Include 3-5 research questions. What motivates the questions? Why are they important?
+
+Our project will focus on how the development of technology over time has impacted mental health and the presence of various mental illnesses. Our data spans from 1000 BCE to 2019, which includes the creation of basic tools, the Industrial revolution, and the more recent rise in digital technologies. Our specific research questions include "When did certain mental illnesses get defined and become significant in society?", "Is there a trend between mental illness and technological rise?", "What is defined as 'technology'?", and "How is mental illness quantified, especially in the BCE years?" The motivation behind these questions is to get familiar with our data, to understand where it came from and the intention behind it. We also wish to understand societal comprehension and development of mental illness and their definitions. In media nowadays, there's a bad news bias present in a lot of our media. Maybe we're living in the worst time mentally in history, or maybe we're finally defining mental illness and attempting to deal with it for the first time in history. A comprehensive understanding of these issues is important in present day, as mental illness is a hot button topic. Maybe our presentation will be helpful for those worried about the rise in mental illness and what that means.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+ > Describe your topic and related work in this space. You must include 3 citations to related work. 
+ 
+Our topic deals with sensitive issues that require some outside research. One difficulty I predict is our analysis of data via an external factor (technology). We'll have to quantify what technology means in terms of timeline/year I found several articles that help define our data further. To do this, I've found external sites that detail the timeline of mental illness renaissances, which we can then use to filter the data accordingly. There's an excerpt from a psychology textbook that offers a comprehensive summary on mental illness and its varying definitions from 2700 BC until present day. Some significant notes from this chapter include major societal realizations within the Middle Ages, mental asylums in the 16th century and into the 19th century, and then the introduction of mental illness classifications in the 20th century. The "Evolving Definitions of Mental Illness and Wellness" study gives more definition as well, but starting in the mid-20th century and onwards. The "Technology, Society, and Mental Illness: Challenges and Opportunities for Assessment and Treatment" study proves that some data already exists to answer our research questions. This study specifically goes into schizophrenia and its rising global recognition. This study will be useful for specifically analyzing the schizophrenia data within our dataset.
+
+Citation:
+
+Brewer, Lauren. “General Psychology: Required Reading.” Noba, 2019, nobaproject.com/textbooks/lauren-brewer-new-textbook.
+
+Harvey, Philip D., and Richard Se Keefe. “Technology, Society, and Mental Illness: Challenges and Opportunities for Assessment and Treatment.” Innovations in Clinical Neuroscience, vol. 9, no. 11-12, Matrix Medical Communications, 2012, pp. 47–50, www.ncbi.nlm.nih.gov/pmc/articles/PMC3552462/.
+
+Manderscheid, Ronald W., et al. “Evolving Definitions of Mental Illness and Wellness.” Preventing Chronic Disease, vol. 7, no. 1, Centers for Disease Control and Prevention, 2019, p. A19, www.ncbi.nlm.nih.gov/pmc/articles/PMC2811514/.
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> Where did you find the data? Please include a link to the data source  
+
+This data was found in data world, through Google Datasets. https://data.world/vizzup/mental-health-depression-disorder-data
+
+> Who collected the data?  
+
+The author, Amit, of the dataset collected the data from a website called ourworldindata.org
+
+> How was the data collected or generated?  
+
+The data was collected through ourworldindata.org, an organization who gets their data from specialized institutes, official government sources, research articles, statistical agencies and international institutions such as the OECD, the world bank, and so on.
+
+> Why was the data collected? 
+
+The data was collected to answer questions such as "How many people in each country suffer mental health problems?" and "What are the types of mental health disorder that people around the world suffer?".
+
+> How many observations (rows) are in your data?
+
+There are 109,000 observations.
+
+> How many features (columns) are in the data?
+
+There are 10 columns.
+
+> What, if any, ethical questions or questions of power do you need to consider when working with this data? 
+
+Who defines mental illness? Who or what defines technology? How do we, with our own identities, choose which definitions to adhere to when examining global data? Is there an ethical way to translate and be mindful of cultural norms? We would like to avoid putting our own biases onto our perception of the data.
+
+> What are possible limitations or problems with this data? 
+
+Some possible limitations with this data have to do with the sheer size of the data. We give further detail within the "Limitations and Challenges" question later on, but this dataset contains 108,552 rows and 10 columns. Deciding how to filter the data runs up against the ethical questions we posed earlier. It also includes mental illnesses globally and across a span of centuries, but with an uneven amount. There will be more cases of certain illnesses than others simply because extracting data from thousands of years ago is harder than it is to extract data from the 1900's and onwards. We don't know how reliable a measure is of "mental illness" in the BCE years, as that definition was set by the makers of this dataset. We also have to be conscious of how many entities are represented by this data, and how we describe it. Over history, however, the areas of entities have changed. We will have to make decisions on if we should include one country as its name and all of its previous ones, or if we should include those as their own separate filter. For example, the term "North America" has evolved over time. The name has described different cultures and groups of people over the course of history, and we should be mindful of that.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Since our research would possibly find out the relationship between technology and mental health, there are going to be a lot of implications from all roles in the industry to improve people’s mental wellness. First, tech companies will know how their products affect their users’ mental health positively or negatively, so they are able to make some changes or improvements. For example, policymakers will have to add a policy that could prevent their product from sending negative feelings to the users. Moreover, the technologist can start to develop a new direction for their product in order to make more positive influences on society, making sure the concepts, products, and equipment would fit the new policy and the research we did. Lastly, the designers can start to do user research to find out what aspect of their product is hurting mental wellness, and build a new solution that can make improvements to the experience of the product.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+The first and most glaring challenge is working with a dataset of this magnitude. In total, the dataset contains 108,552 rows and 10 columns. In order to examine the data more closely and discern patterns, we will have to filter to a smaller, working data frame. The brings us to another challenge, deciding which information to move forward with and draw conclusions from. Since patterns occur most evidently across time, it is beneficial to compare several years of data from one country. Realisitcally, we will be selecting a few countries to compare, but that begs the question how do we select which nations' data to utilize. Discussing it briefly, we will choose countries who represent diverse regions, cultures and population sizes, in attempt to grasp a global perspective. As far as limitiations, for our choice in topic, we aren't allowed the same lightheartness with which to approach our projects that others groups may be. We must proceed with respect for the hardships of the individuals included in the data.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+From the summary information lists, the highest and lowest percentages for three mental illnesses were found across 28 years. Although it is not true for all of the elements, for Schizophrenia, Bipolar, and Anxiety, the highest value was in 2017 and the lowest was in 1990. For Schizophrenia, the minimum was 0.206% and the maximum was 2.11%, for a difference of 0.005%. For Bipolar, the minimum was 0.7138% and the maximum was 0.7212%, for a difference of 0.0074%. For Anxiety, the minimum was 3.92% and the maximum was 3.96%, for a difference 0.04%. 
 
 ### Table
+``````{r, echo = FALSE, eval = TRUE}
+table <- Mental_health_Depression_disorder_Data %>% 
+           filter(Year >= 1990) %>% 
+           filter(Year <= 2017) %>%
+           filter(!Entity == "World")
+table <- na.omit(table)
+colnames(table) [5] <- "Schizophernia"
+colnames(table) [6] <- "Bipolar"
+colnames(table) [7] <- "Eating Disorder"
+colnames(table) [8] <- "Anxiety"
+colnames(table) [9] <- "Drug Use"
+colnames(table) [10] <- "Depression"
+colnames(table) [11] <- "Alcohol Use"
+  
+aggregated_table <- table %>%
+                       group_by(Year) %>%
+                       summarize(schizophrenia_perc = mean(Schizophernia)) 
+table2 <- table %>%
+            group_by(Year) %>%
+            summarize(bipolar_perc = mean(Bipolar)) 
+table3 <- table %>%
+            group_by(Year) %>%
+            summarize(eating_disorder_perc = mean(`Eating Disorder`))  
+table4 <- table %>%
+             group_by(Year) %>%
+             summarize(anxiety_perc = mean(Anxiety)) 
+table5 <- table %>%
+             group_by(Year) %>%
+             summarize(drug_use_perc = mean(`Drug Use`)) 
+table6 <- table %>%
+             group_by(Year) %>%
+             summarize(depression_perc = mean(Depression)) 
+table7 <- table %>%
+             group_by(Year) %>%
+             summarize(alcohol_use_perc = mean(`Alcohol Use`)) 
+aggregated_table <- left_join(aggregated_table, table2)
 
-Include a table of aggregate information
+aggregated_table <- left_join(aggregated_table, table3)            
 
-Describe why you included the table and what information it reveals
+aggregated_table <- left_join(aggregated_table, table4)  
+
+aggregated_table <- left_join(aggregated_table, table5) 
+
+aggregated_table <- left_join(aggregated_table, table6) 
+
+aggregated_table <- left_join(aggregated_table, table7)
+
+aggregated_table <- aggregated_table %>% 
+                       mutate_if(is.numeric, round, digits = 4)
+```
+
+This table displays the average percentage of various mental illnesses or disorders across 195 countries for the years of 1990 until 2017. It was included because it condenses the formerly very large data set into a format that is easier to undertand and draw conclusions from. The table reveals which years had the high and lowest average percentages of the various ailments. 
 
 ### Chart 1
 
