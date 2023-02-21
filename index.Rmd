@@ -146,9 +146,17 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
+I chose this chart because it was helpful for me, as the data analyzer, and I
+think this is an interesting visual for whoever the reader is. Originally, I
+attempted to include all countries across the globe, but visually it was too
+crowded and wouldn't have been a useful graph. A scatter plot is helpful in
+showing specific countries' plot across time. It reveals the rates compared to
+other countries, showing a clear highest and lowest rate. Those rates imply
+further research into why those rates happened when they did.
+
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, code = readLines("chart1.R")}
 ```
 
 ### Chart 2
@@ -163,5 +171,6 @@ library(ggplot2)
 
 ``````{r, echo = FALSE, code = readLines("chart3.R")}
 bar_chart
+
 ```
 
