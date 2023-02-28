@@ -161,9 +161,11 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 ### Chart 2
 
-Include a chart
+I choose this bar because it shows the increasing number of people who are diagnosed with anxiety disorder, and I think it would be really helpful to understand this piece of data so that we can make a lot of progress in our
+Final project.
 
-Describe why you chose this chart and what information it reveals
+``````{r, echo = FALSE, code = readLines("chart2.R")}
+```
 
 ### Chart 3
 
